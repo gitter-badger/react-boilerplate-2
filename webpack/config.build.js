@@ -19,9 +19,6 @@ module.exports = merge(config, {
       },
     ],
   },
-  output: {
-    filename: '[hash].js',
-  },
   plugins: [
     new extract('[hash].css'),
     new webpack.DefinePlugin({

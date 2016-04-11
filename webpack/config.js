@@ -7,9 +7,7 @@ var path         = require('path')
 module.exports = {
   cache: false,
   context: path.resolve('./src'),
-  entry: {
-    script: './scripts/index.jsx',
-  },
+  entry: './scripts/index.jsx',
   module: {
     loaders: [
       {
@@ -23,9 +21,17 @@ module.exports = {
           ],
         },
       },
+      {
+        test: /\.(jpg|png|svg|woff)$/,
+        loader: 'file',
+        query: {
+          name: 'assets/[hash].[ext]',
+        },
+      },
     ],
   },
   output: {
+    filename: '[hash].js',
     path: path.resolve('./build'),
     publicPath: '/',
   },

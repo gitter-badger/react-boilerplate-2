@@ -19,9 +19,6 @@ module.exports = merge(config, {
       },
     ],
   },
-  output: {
-    filename: '[name].js',
-  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"development"',
