@@ -30,6 +30,7 @@ module.exports = merge(config, {
   devtool: '#source-map',
   devServer: {
     contentBase: 'build',
+    historyApiFallback: true,
     hot: true,
     inline: true,
     port: process.env.npm_package_config_port,
