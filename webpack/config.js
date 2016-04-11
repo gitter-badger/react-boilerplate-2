@@ -32,6 +32,9 @@ module.exports = {
   },
   plugins: [
     new html({
+      minify: {
+        collapseWhitespace: true,
+      },
       template: './index.html',
     }),
   ],
