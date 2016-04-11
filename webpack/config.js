@@ -28,6 +28,10 @@ module.exports = {
           name: 'assets/[hash].[ext]',
         },
       },
+      {
+        test: /\.json$/,
+        loader: 'json',
+      },
     ],
   },
   output: {
