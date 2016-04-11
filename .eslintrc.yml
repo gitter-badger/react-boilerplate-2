@@ -246,3 +246,46 @@ rules:
   - yield-star-spacing:
     - error
     - before
+  // react
+  - react/no-danger: warn
+  - react/no-deprecated: error
+  - react/no-did-mount-set-state: error
+  - react/no-did-update-set-state: error
+  - react/no-direct-mutation-state: error
+  - react/no-is-mounted: error
+  - react/no-multi-comp: error
+  - react/no-string-refs: error
+  - react/no-unknown-property: error
+  - react/prefer-es6-class: error
+  - react/prop-types: warn
+  - react/react-in-jsx-scope: error
+  - react/self-closing-comp: error
+  - react/sort-prop-types: error
+  - react/wrap-multilines: error
+  // react jsx
+  - react/jsx-boolean-value:
+    - error
+    - never
+  - react/jsx-closing-bracket-location: error
+  - react/jsx-curly-spacing:
+    - error
+    - always
+  - react/jsx-equals-spacing: error
+  - react/jsx-indent-props:
+    - error
+    - 2
+  - react/jsx-indent:
+    - error
+    - 2
+  - react/jsx-key: error
+  - react/jsx-max-props-per-line: error
+  - react/jsx-no-bind:
+    - error
+    - allowArrowFunctions: true
+  - react/jsx-no-duplicate-props: error
+  - react/jsx-no-undef: error
+  - react/jsx-pascal-case: error
+  - react/jsx-sort-props: error
+  - react/jsx-space-before-closing: error
+  - react/jsx-uses-react: error
+  - react/jsx-uses-vars: error
