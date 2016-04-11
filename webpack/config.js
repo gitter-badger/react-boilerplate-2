@@ -1,5 +1,6 @@
-var html = require('html-webpack-plugin')
-var path = require('path')
+var autoprefixer = require('autoprefixer')
+var html         = require('html-webpack-plugin')
+var path         = require('path')
 
 
 
@@ -13,7 +14,7 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules$/,
+        exclude: /node_modules/,
         loader: 'babel',
         query: {
           presets: [
@@ -34,6 +35,11 @@ module.exports = {
       template: './index.html',
     }),
   ],
+  postcss: function() {
+    return [
+      autoprefixer,
+    ]
+  },
   resolve: {
     alias: {
       assets: path.resolve('./src/assets'),

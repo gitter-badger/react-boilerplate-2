@@ -13,6 +13,7 @@ module.exports = merge(config, {
         test: /\.sass$/,
         loader: extract.extract([
           'css',
+          'postcss',
           'sass?indentedSyntax',
         ]),
       },

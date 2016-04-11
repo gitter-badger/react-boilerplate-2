@@ -13,6 +13,7 @@ module.exports = merge(config, {
         loaders: [
           'style',
           'css',
+          'postcss',
           'sass?indentedSyntax',
         ],
       },
