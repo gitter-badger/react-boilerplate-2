@@ -12,7 +12,7 @@ module.exports = merge(config, {
         test: /\.sass$/,
         loaders: [
           'style',
-          'css?sourceMap,minimize',
+          'css?sourceMap',
           'postcss',
           'sass?sourceMap,indentedSyntax',
         ],

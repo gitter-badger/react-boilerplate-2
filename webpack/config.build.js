@@ -12,9 +12,9 @@ module.exports = merge(config, {
       {
         test: /\.sass$/,
         loader: extract.extract([
-          'css?sourceMap,minimize',
+          'css?',
           'postcss',
-          'sass?sourceMap,indentedSyntax',
+          'sass?indentedSyntax',
         ]),
       },
     ],
@@ -24,5 +24,6 @@ module.exports = merge(config, {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"',
     }),
+    new webpack.optimize.UglifyJsPlugin()
   ],
 })
