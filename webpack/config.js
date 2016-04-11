@@ -5,6 +5,7 @@ var path         = require('path')
 
 
 module.exports = {
+  cache: false,
   context: path.resolve('./src'),
   entry: {
     script: './scripts/index.jsx',
