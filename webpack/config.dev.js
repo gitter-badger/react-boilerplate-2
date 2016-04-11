@@ -27,7 +27,7 @@ module.exports = merge(config, {
   ],
 
 
-
+  devtool: '#source-map',
   devServer: {
     contentBase: 'build',
     hot: true,
