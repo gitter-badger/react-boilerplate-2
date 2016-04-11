@@ -24,6 +24,7 @@ module.exports = merge(config, {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"',
     }),
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
   ],
 })
