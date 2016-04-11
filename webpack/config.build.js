@@ -1,6 +1,5 @@
 var extract = require('extract-text-webpack-plugin')
 var merge   = require('webpack-merge')
-var path    = require('path')
 var webpack = require('webpack')
 
 var config = require('./config')
