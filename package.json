@@ -13,8 +13,9 @@
     "port": 9000
   },
   "scripts": {
-    "build": "webpack --config webpack/config.build.js",
-    "dev": "webpack-dev-server --config webpack/config.dev.js"
+    "clean": "rimraf build/ *.log",
+    "build": "npm run clean && webpack --config webpack/config.build.js",
+    "dev": "npm run clean && webpack-dev-server --config webpack/config.dev.js"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.0",
@@ -27,6 +28,7 @@
     "html-webpack-plugin": "^2.15.0",
     "node-sass": "^3.4.0",
     "postcss-loader": "^0.8.0",
+    "rimraf": "^2.5.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.0",
