@@ -12,12 +12,15 @@ module.exports = merge(config, {
       {
         test: /\.sass$/,
         loader: extract.extract([
-          'css?',
+          'css',
           'postcss',
           'sass?indentedSyntax',
         ]),
       },
     ],
+  },
+  output: {
+    filename: '[hash].js',
   },
   plugins: [
     new extract('[hash].css'),

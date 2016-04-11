@@ -6,10 +6,9 @@ var path         = require('path')
 
 module.exports = {
   context: path.resolve('./src'),
-  entry: [
-    './scripts/index.jsx',
-    './styles/index.sass',
-  ],
+  entry: {
+    script: './scripts/index.jsx',
+  },
   module: {
     loaders: [
       {
@@ -26,7 +25,6 @@ module.exports = {
     ],
   },
   output: {
-    filename: '[hash].js',
     path: path.resolve('./build'),
     publicPath: '/',
   },
