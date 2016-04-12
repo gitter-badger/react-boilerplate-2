@@ -18,7 +18,7 @@
     "dev": "npm run clean && webpack-dev-server --config webpack/config.dev.js",
     "lint": "npm run lint:js && npm run lint:sass",
     "lint:js": "eslint src/scripts/**/*",
-    "lint:sass": "sass-lint src/styles/**/*"
+    "lint:sass": "sass-lint -v src/styles/**/*"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.0",
