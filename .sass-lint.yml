@@ -1,67 +1,67 @@
 rules:
   border-zero:
-    - error
-    -
-      convention: 0
-  - brace-style:
-    - error
-    -
-      style: stroustrup
-      allow-single-line: false
-  - class-name-format: error
-  - clean-import-paths: error
-  - empty-args: error
-  - empty-line-between-blocks:
-    - error
-    -
-      allow-single-line-rulesets: false
-  - extends-before-declarations: error
-  - extends-before-mixins: error
-  - force-element-nesting: error
-  - function-name-format: error
-  - hex-length: error
-  - hex-notation: error
-  - id-name-format:
-    - error
-    -
-      allow-leading-underscore: false
-      convention: snakecase
-  - indentation: error
-  - leading-zero
-    - error
-    -
-      include: true
-  - mixin-name-format: error
-  - mixins-before-declarations: error
-  - nesting-depth:
-    - warn
-    -
-      max-depth: 4
-  - no-debug: error
-  - no-duplicate-properties: error
-  - no-empty-rulesets: error
-  - no-important: warn
-  - no-invalid-hex: error
-  - no-mergeable-selectors: error
-  - no-misspelled-properties: error
-  - no-trailing-zero: error
-  - no-transition-all: warn
-  - no-warn: error
-  - one-declaration-per-line: error
-  - placeholder-in-extend: error
-  - placeholder-name-format: error
-  - quotes: error
-  - shorthand-values: error
-  - single-line-per-selector: error
-  - space-after-bang: error
-  - space-after-colon: error
-  - space-after-comma: error
-  - space-around-operator: warn
-  - space-before-bang: error
-  - space-before-brace: error
-  - space-before-colon: error
-  - space-between-parens: error
-  - trailing-semicolon: error
-  - url-quotes: error
-  - variable-name-format: error
-  - zero-unit: error
+  - error
+  -
+    convention: 0
+  brace-style:
+  - error
+  -
+    style: stroustrup
+    allow-single-line: false
+  class-name-format: error
+  clean-import-paths: error
+  empty-args: error
+  empty-line-between-blocks:
+  - error
+  -
+    allow-single-line-rulesets: false
+  extends-before-declarations: error
+  extends-before-mixins: error
+  force-element-nesting: error
+  function-name-format: error
+  hex-length: error
+  hex-notation: error
+  id-name-format:
+  - error
+  -
+    allow-leading-underscore: false
+    convention: snakecase
+  indentation: error
+  leading-zero:
+  - error
+  -
+    include: true
+  mixin-name-format: error
+  mixins-before-declarations: error
+  nesting-depth:
+  - warn
+  -
+    max-depth: 4
+  no-debug: error
+  no-duplicate-properties: error
+  no-empty-rulesets: error
+  no-important: warn
+  no-invalid-hex: error
+  no-mergeable-selectors: error
+  no-misspelled-properties: error
+  no-trailing-zero: error
+  no-transition-all: warn
+  no-warn: error
+  one-declaration-per-line: error
+  placeholder-in-extend: error
+  placeholder-name-format: error
+  quotes: error
+  shorthand-values: error
+  single-line-per-selector: error
+  space-after-bang: error
+  space-after-colon: error
+  space-after-comma: error
+  space-around-operator: warn
+  space-before-bang: error
+  space-before-brace: error
+  space-before-colon: error
+  space-between-parens: error
+  trailing-semicolon: error
+  url-quotes: error
+  variable-name-format: error
+  zero-unit: error
