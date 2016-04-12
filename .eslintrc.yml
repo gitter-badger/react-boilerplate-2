@@ -1,0 +1,297 @@
+parser: babel-eslint
+plugins:
+  - react
+rules:
+# possible errors
+  comma-dangle:
+  - error
+  - always
+  no-cond-assign:
+  - error
+  - always
+  no-console: warn
+  no-constant-condition: error
+  no-control-regex: error
+  no-debugger: error
+  no-dupe-args: error
+  no-dupe-keys: error
+  no-duplicate-case: error
+  no-empty: error
+  no-empty-character-class: error
+  no-ex-assign: error
+  no-extra-boolean-cast: error
+  no-extra-parens: error
+  no-extra-semi: error
+  no-func-assign: error
+  no-inner-declarations: error
+  no-invalid-regexp: error
+  no-irregular-whitespace: error
+  no-negated-in-lhs: error
+  no-obj-calls: error
+  no-regex-spaces: error
+  no-sparse-arrays: error
+  no-unexpected-multiline: error
+  no-unreachable: error
+  use-isnan: error
+  valid-jsdoc: warn
+  valid-typeof: error
+# best practises
+  array-callback-return: error
+  block-scoped-var: error
+  complexity: error
+  curly: error
+  dot-location:
+  - error
+  - property
+  dot-notation: error
+  eqeqeq:
+  - error
+  - allow-null
+  guard-for-in: error
+  no-alert: warn
+  no-caller: error
+  no-case-declarations: error
+  no-div-regex: error
+  no-else-return: error
+  no-empty-function: warn
+  no-empty-pattern: warn
+  no-eq-null: error
+  no-eval: error
+  no-extend-native: error
+  no-extra-bind: error
+  no-extra-label: error
+  no-fallthrough: error
+  no-floating-decimal: error
+  no-implied-eval: error
+  no-invalid-this: error
+  no-iterator: error
+  no-labels: error
+  no-lone-blocks: error
+  no-loop-func: warn
+  no-magic-numbers: warn
+  no-multi-spaces:
+  - error
+  -
+    exceptions:
+      VariableDeclarator: true
+      ImportDeclaration: true
+  no-multi-str: error
+  no-native-reassign: error
+  no-new: error
+  no-new-func: error
+  no-new-wrappers: error
+  no-octal: error
+  no-octal-escape: error
+  no-param-reassign: error
+  no-proto: error
+  no-redeclare: error
+  no-return-assign:
+  - error
+  - always
+  no-script-url: error
+  no-self-assign: error
+  no-self-compare: error
+  no-sequences: error
+  no-throw-literal: error
+  no-unmodified-loop-condition: error
+  no-unused-expressions: error
+  no-unused-labels: error
+  no-useless-call: error
+  no-useless-concat: error
+  no-useless-escape: error
+  no-void: error
+  no-with: error
+  radix:
+  - error
+  - as-needed
+  wrap-iife:
+  - error
+  - inside
+  yoda:
+  - error
+  - never
+# variable
+  init-declarations: error
+  no-catch-shadow: error
+  no-delete-var: error
+  no-label-var: error
+  no-shadow: error
+  no-shadow-restricted-names: error
+  no-undef: error
+  no-undef-init: error
+  no-undefined: error
+  no-unused-vars: error
+  no-use-before-define: error
+# stylistic issues
+  array-bracket-spacing:
+  - error
+  - always
+  block-spacing: error
+  brace-style:
+  - error
+  - stroustrup
+  camelcase: error
+  comma-spacing: error
+  comma-style: error
+  computed-property-spacing:
+  - error
+  - always
+  consistent-this: error
+  func-names: error
+  indent:
+  - error
+  - 2
+  -
+    SwitchCase: 1
+    VariableDeclarator:
+      var: 2
+      let: 2
+      const: 3
+  jsx-quotes: error
+  key-spacing: error
+  lines-around-comment:
+  - error
+  -
+    beforeLineComment: true
+    allowBlockStart: true
+    allowBlockEnd: true
+    allowObjectStart: true
+    allowObjectEnd: true
+    allowArrayStart: true
+    allowArrayEnd: true
+  max-depth: warn
+  max-len:
+  - warn
+  - 80
+  - 2
+  max-nested-callbacks:
+  - warn
+  -
+    max: 2
+  max-params:
+  - warn
+  -
+    max: 2
+  new-cap: error
+  new-parens: error
+  newline-after-var: error
+  newline-before-return: error
+  newline-per-chained-call: error
+  no-array-constructor: error
+  no-bitwise: error
+  no-continue: error
+  no-mixed-spaces-and-tabs: error
+  no-multiple-empty-lines:
+  - error
+  -
+    max: 3
+  no-nested-ternary: error
+  no-new-object: error
+  no-spaced-func: error
+  no-trailing-spaces: error
+  no-unneeded-ternary: error
+  no-whitespace-before-property: error
+  object-curly-spacing:
+  - error
+  - always
+  one-var:
+  - error
+  - never
+  operator-assignment: error
+  operator-linebreak: error
+  padded-blocks:
+  - error
+  - never
+  quote-props:
+  - error
+  - as-needed
+  quotes:
+  - error
+  - backtick
+  semi:
+  - error
+  - never
+  semi-spacing: error
+  space-before-blocks: error
+  space-before-function-paren:
+  - error
+  - never
+  space-in-parens: error
+  space-infix-ops: error
+  space-unary-ops: error
+  spaced-comment: error
+  wrap-regex: error
+  # ecmascript 6
+  arrow-body-style:
+  - error
+  - always
+  arrow-parens: error
+  arrow-spacing: error
+  constructor-super: error
+  generator-star-spacing: error
+  no-class-assign: error
+  no-confusing-arrow: error
+  no-const-assign: error
+  no-dupe-class-members: error
+  no-duplicate-imports: error
+  no-new-symbol: error
+  no-this-before-super: error
+  no-useless-constructor: error
+  no-var: error
+  object-shorthand: error
+  prefer-arrow-callback: error
+  prefer-const: error
+  prefer-rest-params: error
+  prefer-spread: error
+  prefer-template: error
+  require-yield: error
+  template-curly-spacing:
+  - error
+  - always
+  yield-star-spacing:
+  - error
+  - before
+  # react
+  react/no-danger: warn
+  react/no-deprecated: error
+  react/no-did-mount-set-state: error
+  react/no-did-update-set-state: error
+  react/no-direct-mutation-state: error
+  react/no-is-mounted: error
+  react/no-multi-comp: error
+  react/no-string-refs: error
+  react/no-unknown-property: error
+  react/prefer-es6-class: error
+  react/prop-types: warn
+  react/react-in-jsx-scope: error
+  react/self-closing-comp: error
+  react/sort-prop-types: error
+  react/wrap-multilines: error
+  # react jsx
+  react/jsx-boolean-value:
+  - error
+  - never
+  react/jsx-closing-bracket-location: error
+  react/jsx-curly-spacing:
+  - error
+  - always
+  react/jsx-equals-spacing: error
+  react/jsx-indent-props:
+  - error
+  - 2
+  react/jsx-indent:
+  - error
+  - 2
+  react/jsx-key: error
+  react/jsx-max-props-per-line: error
+  react/jsx-no-bind:
+  - error
+  -
+    allowArrowFunctions: true
+  react/jsx-no-duplicate-props: error
+  react/jsx-no-undef: error
+  react/jsx-pascal-case: error
+  react/jsx-sort-props: error
+  react/jsx-space-before-closing: error
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error

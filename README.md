@@ -25,6 +25,17 @@ Development build::
 npm run dev
 ```
 
+Run tests:
+```sh
+npm run test
+```
+
+Lint code:
+
+```sh
+npm run lint
+```
+
 ## Configuration
 
 * `port` - port for development build

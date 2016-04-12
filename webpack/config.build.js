@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 var extract = require('extract-text-webpack-plugin')
 var merge   = require('webpack-merge')
 var webpack = require('webpack')
