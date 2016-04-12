@@ -25,6 +25,11 @@ Development build::
 npm run dev
 ```
 
+Run tests:
+```sh
+npm run test
+```
+
 Lint code:
 
 ```sh
